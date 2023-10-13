@@ -1,13 +1,21 @@
 import { useState } from "react";
+import { fetchData } from "./api";
 
 function App() {
+  const [data, setData] = useState("");
+  const [city, setCity] = useState("isfahan");  
+
+  const search = async () => {
+    const apiData = await fetchData(city);
+    setData(apiData);
+    console.log(apiData)
+  };
+
   return (
     <>
-      <h1 className="text-3xl font-bold text-red-500 underline">
-        Hello world! lets go
-      </h1>
+      <button onClick={search}>click</button>
     </>
-  );
+  )
 }
 
 export default App;
