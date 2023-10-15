@@ -13,8 +13,7 @@ function App() {
 
   return (
     <>
-      <button onClick={search}>click</button>
-      
+      <SearchBar/>
     </>
   )
 }
