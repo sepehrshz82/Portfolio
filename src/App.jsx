@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import styles from "./index.css"
 import { fetchData } from "./components/Api";
 import { FaWind } from "react-icons/fa";
 import { FaTemperatureHalf } from "react-icons/fa6";
@@ -54,7 +55,9 @@ function App() {
           <span className="box-border inline-block h-24 w-24 animate-spin-slow rounded-full border-[15px] border-dotted border-slate-500"></span>
         </div>
       ) : (
-        <div className="flex flex-col items-center bg-[#0e1621] pb-10 pt-5">
+        <div className="flex flex-row w-full">
+        <Navbar/>
+        <div className="flex flex-col w-[71%] items-center bg-[#0e1621] pb-10 pt-5">
           {/* Search field */}
           <div className="flex h-12 w-5/6 flex-row items-center rounded-lg bg-[#212f3d] pr-5 text-white">
             <input
@@ -154,10 +157,8 @@ function App() {
               </div>
             </div>
           </div>
-          <div id="main_container">
-        <Navbar />
-        <DayForecast />
-      </div>
+        </div>
+        <DayForecast/>
         </div>
       )}
     </>
