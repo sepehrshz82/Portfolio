@@ -5,6 +5,8 @@ import { FaTemperatureHalf } from "react-icons/fa6";
 import { SiRainmeter } from "react-icons/si";
 import { CiSun } from "react-icons/ci";
 import { GoSearch } from "react-icons/go";
+import DayForecast from "./components/DayForecast";
+import Navbar from "./components/Navbar";
 import cloudy from "./images/cloudy.png";
 import foggy from "./images/foggy.png";
 import lightning from "./images/lightning.png";
@@ -152,6 +154,10 @@ function App() {
               </div>
             </div>
           </div>
+          <div id="main_container">
+        <Navbar />
+        <DayForecast />
+      </div>
         </div>
       )}
     </>
