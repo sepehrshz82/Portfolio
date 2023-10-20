@@ -3,15 +3,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 4.5rem;
+  width: clamp(4.7rem, 5vw, 5rem);
   height: 96vh;
-  padding: 1rem 0;
+  padding: 1rem .3rem;
   border-radius: 1rem;
   gap: 5vh;
-  width: 5%;
 }
 
 #navbar > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
@@ -43,11 +45,17 @@
   opacity: .5;
 }
 
-.this_page{
-  opacity: 1;
-}
-
 .nav_item:hover{
   color: #00e7ff;
   opacity: 1;
 }
+
+.this_page{
+  opacity: 1;
+}
+
+/* @media (max-width: 1000px){
+  #navbar{
+    display: none;
+  }
+} */

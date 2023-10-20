@@ -1,25 +1,24 @@
-.days{
+.days {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: clamp(15rem, 50vw, 20rem);
+  width: clamp(13rem, 50vw, 15rem);
   height: clamp(3rem, 100%, 10rem);
   border-top: 1px solid #ffffff77;
 }
 
-.the_day{
+.the_day {
   width: 3rem;
 }
 
-.the_weather{
+.the_weather {
   display: flex;
   justify-content: center;
   gap: 1vw;
   width: 5rem;
 }
 
-.the_temp{
+.the_temp {
   width: 3rem;
   text-align: right;
-  
 }

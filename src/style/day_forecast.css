@@ -4,7 +4,6 @@
   border-radius: 1rem;
   padding: 1rem;
   height: inherit;
-  width: 24%;
 }
 
 #day_forecast > p{
@@ -17,3 +16,9 @@
   justify-content: space-between;
   flex-grow: 1;
 }
+
+/* @media (max-width: 1000px){
+  #day_forecast{
+    display: none;
+  }
+} */
