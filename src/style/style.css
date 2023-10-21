@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   position: relative;
   background-color: #0e1621;
   padding: 2vh;
@@ -12,11 +12,11 @@ body{
   height: 100vh;
 }
 
-.sec_color{
+.sec_color {
   background-color: #212f3d;
 }
 
-#main_container{
+#main_container {
   display: flex;
   gap: 3vw;
 }
