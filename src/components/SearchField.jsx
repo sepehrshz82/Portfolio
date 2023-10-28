@@ -1,15 +1,8 @@
 import { useState, useEffect } from "react";
 import { GoSearch } from "react-icons/go";
 import { fetchData } from "./Api";
-import cloudy from "../images/cloudy.png";
-import foggy from "../images/foggy.png";
-import lightning from "../images/lightning.png";
-import nimeabri from "../images/nimeabri.png";
-import rain from "../images/rain.png";
-import snow from "../images/snow.png";
-import sunny from "../images/sunny.png";
 
-function SearchField({ setIsShow, setCity, setIcon, data, setData, city }) {
+function SearchField({ setIsShow, setCity, data, setData, city }) {
   const [searchInput, setSearchInput] = useState("");
 
   useEffect(() => {
@@ -23,8 +16,6 @@ function SearchField({ setIsShow, setCity, setIcon, data, setData, city }) {
     setTimeout(() => {
       setIsShow(true);
     }, 2000);
-    const myIcon = findIcon();
-    setIcon(myIcon);
     console.log(data);
   };
 
@@ -36,31 +27,6 @@ function SearchField({ setIsShow, setCity, setIcon, data, setData, city }) {
     if (event.key === "Enter") {
       event.preventDefault();
       search();
-    }
-  };
-
-  const findIcon = () => {
-    switch (data.current.weathercode) {
-      case 0:
-        return sunny;
-      case 1:
-      case 2:
-        return nimeabri;
-      case 3:
-        return cloudy;
-      case 45:
-      case 48:
-        return foggy;
-      case 61:
-      case 63:
-      case 65:
-        return rain;
-      case 71:
-      case 73:
-      case 75:
-        return snow;
-      case 95:
-        return lightning;
     }
   };
 

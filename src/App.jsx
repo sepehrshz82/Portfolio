@@ -12,7 +12,6 @@ function App() {
   const [data, setData] = useState();
   const [city, setCity] = useState("isfahan");
   const [isShow, setIsShow] = useState(false);
-  const [icon, setIcon] = useState("");
 
   useEffect(() => {
     search();
@@ -25,7 +24,7 @@ function App() {
       setIsShow(true);
     }, 2000);
   };
-
+  
   return (
     <>
       {!isShow ? (
@@ -40,12 +39,11 @@ function App() {
             <SearchField
               setIsShow={setIsShow}
               setCity={setCity}
-              setIcon={setIcon}
               data={data}
               setData={setData}
               city={city}
             />
-            <CurrentWeather data={data} icon={icon} city={city} />
+            <CurrentWeather data={data} city={city} />
             <HourlySection data={data} />
             <AirCondition data={data} />
           </div>

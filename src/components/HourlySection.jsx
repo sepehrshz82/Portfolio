@@ -10,9 +10,8 @@ function HourlySection({ data }) {
       <div className="mt-6 flex flex-row divide-x-2 divide-slate-400 justify-between">
         {new Array(7).fill(0).map((x, i) => {
           return (
-            <div className="flex justify-center w-full">
+            <div key={i} className="flex justify-center w-full">
               <HourlyWeather
-                key={i}
                 time1={data.hourly.time[hour + i + 1][11]}
                 time2={data.hourly.time[hour + i + 1][12]}
                 maxTemp={data.hourly.temperature_2m[hour + i + 1]}
