@@ -17,8 +17,8 @@
   flex-grow: 1;
 }
 
-/* @media (max-width: 1000px){
+@media (max-width: 1000px){
   #day_forecast{
     display: none;
   }
-} */
+}
