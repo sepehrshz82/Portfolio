@@ -35,7 +35,7 @@ function App() {
       ) : (
         <div className="flex w-full flex-row">
           <Navbar />
-          <div className="flex w-[100%] h-[96vh] flex-col items-center bg-[#0e1621] ">
+          <div className="flex w-[71%] flex-col items-center bg-[#0e1621] pb-10 pt-5">
             <SearchField
               setIsShow={setIsShow}
               setCity={setCity}
