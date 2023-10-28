@@ -67,14 +67,14 @@ function SearchField({ setIsShow, setCity, setIcon, data, setData, city }) {
   return (
     <div className="flex h-12 w-5/6 flex-row items-center rounded-lg bg-[#212f3d] pr-5 text-white">
       <input
-        className="flex w-[95%] flex-col rounded-lg bg-[#212f3d] pl-5 placeholder-slate-300 outline-none"
+        className="flex-1 rounded-lg bg-[#212f3d] pl-5 placeholder-slate-300 outline-none"
         placeholder="Search for cities..."
         onChange={searchHandler}
         value={searchInput}
         onKeyDown={handleKeyDown}
       />
       <GoSearch
-        className="grow-1 w-[5%] text-2xl text-slate-300"
+        className="flex-3 text-2xl text-slate-300"
         onClick={search}
       />
     </div>

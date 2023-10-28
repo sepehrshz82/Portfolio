@@ -1,6 +1,8 @@
 #navbar {
-  position: relative;
+  position: sticky;
   display: flex;
+  top: 20px;
+  left: 20px;
   flex-direction: column;
   align-items: center;
   width: clamp(4.7rem, 5vw, 5rem);
