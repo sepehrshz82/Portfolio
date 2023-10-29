@@ -47,7 +47,7 @@ function App() {
             <HourlySection data={data} />
             <AirCondition data={data} />
           </div>
-          <DayForecast />
+          <DayForecast data={data} />
         </div>
       )}
     </>
