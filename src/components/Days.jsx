@@ -46,7 +46,7 @@ function Days({day, state, high, low}) {
     <div className="days">
       <span className="the_day">{day}</span>
       <div className="the_weather">
-        <img className="object-cover" src={image}></img>
+        <img className="the_icon" src={image}></img>
       </div>
       <div className="the_temp">
         {high}/{low}

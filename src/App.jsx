@@ -24,7 +24,7 @@ function App() {
       setIsShow(true);
     }, 2000);
   };
-  
+
   return (
     <>
       {!isShow ? (
@@ -33,7 +33,7 @@ function App() {
           <span className="box-border inline-block h-24 w-24 animate-spin-slow rounded-full border-[15px] border-dotted border-slate-500"></span>
         </div>
       ) : (
-        <div className="flex w-full flex-row">
+        <div className="flex w-full flex-row ">
           <Navbar />
           <div className="flex w-[71%] flex-col items-center bg-[#0e1621] pb-10 pt-5">
             <SearchField
@@ -44,8 +44,8 @@ function App() {
             <CurrentWeather data={data} city={city} />
             <HourlySection data={data} />
             <AirCondition data={data} />
+            <DayForecast data={data} />
           </div>
-          <DayForecast data={data} />
         </div>
       )}
     </>

@@ -1,24 +1,13 @@
 .days {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: clamp(13rem, 50vw, 15rem);
-  height: clamp(3rem, 100%, 10rem);
-  border-top: 1px solid #ffffff77;
+  width: clamp(5rem, 10vw, 10rem);
+  height: 7rem;
+  border-left: 1px solid #ffffff77;
 }
 
-.the_day {
-  width: 3rem;
-}
-
-.the_weather {
-  display: flex;
-  justify-content: center;
-  gap: 1vw;
-  width: 5rem;
-}
-
-.the_temp {
-  width: 3rem;
-  text-align: right;
+.the_icon{
+  width: 4rem;
 }
