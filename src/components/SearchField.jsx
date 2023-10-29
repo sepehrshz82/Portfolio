@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { GoSearch } from "react-icons/go";
 import { fetchData } from "./Api";
 
-function SearchField({ setIsShow, setCity, data, setData, city }) {
+function SearchField({ setIsShow, setCity, setData}) {
   const [searchInput, setSearchInput] = useState("");
 
   useEffect(() => {
@@ -11,12 +11,10 @@ function SearchField({ setIsShow, setCity, data, setData, city }) {
 
   const search = async () => {
     if (searchInput) setCity(searchInput);
-    const apiData = await fetchData(city);
+    const apiData = await fetchData(searchInput);
     setData(apiData);
-    setTimeout(() => {
-      setIsShow(true);
-    }, 2000);
-    console.log(data);
+    setIsShow(true);
+    console.log(apiData);
   };
 
   const searchHandler = (event) => {

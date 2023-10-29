@@ -39,9 +39,7 @@ function App() {
             <SearchField
               setIsShow={setIsShow}
               setCity={setCity}
-              data={data}
               setData={setData}
-              city={city}
             />
             <CurrentWeather data={data} city={city} />
             <HourlySection data={data} />
