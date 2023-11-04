@@ -1,10 +1,12 @@
 import React, { Component } from "react";
+import ApexChart from "./ApexChart";
 import Days from "./Days";
 
 function DayForecast({data}) {
   return (
     <div id="day_forecast" className="mt-10 h-52 w-5/6 rounded-xl bg-[#212f3d] pl-5 pr-5">
       <p className="mt-5 text-sm text-slate-400">7-DAYS FORECAST</p>
+      <ApexChart />
       <div id="days_container" className="mt-6 flex flex-row divide-x-2 divide-slate-400 justify-between">
         <Days day="today" state={data.daily.weathercode[0]} high={data.daily.temperature_2m_max[0]} low={data.daily.temperature_2m_min[0]}/>
         <Days day="tue" state={data.daily.weathercode[1]} high={data.daily.temperature_2m_max[1]} low={data.daily.temperature_2m_min[1]}/>

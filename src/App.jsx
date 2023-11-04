@@ -7,6 +7,7 @@ import CurrentWeather from "./components/CurrentWeather";
 import SearchField from "./components/SearchField";
 import HourlySection from "./components/HourlySection";
 import AirCondition from "./components/AirCondition";
+import ApexChart from "./components/ApexChart";
 
 function App() {
   const [data, setData] = useState();
@@ -35,7 +36,7 @@ function App() {
       ) : (
         <div className="flex w-full flex-row ">
           <Navbar />
-          <div className="flex w-[71%] flex-col items-center bg-[#0e1621] pb-10 pt-5">
+          <div className="flex w-full flex-col items-center bg-[#0e1621] pb-10 pt-5">
             <SearchField
               setIsShow={setIsShow}
               setCity={setCity}
