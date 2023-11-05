@@ -9,5 +9,7 @@
 }
 
 .the_icon{
-  width: 4rem;
+  width: clamp(3rem, 10vw, 4rem);
 }
+
+img{max-width: none;}
