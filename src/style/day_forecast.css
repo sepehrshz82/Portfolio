@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   border-radius: .75rem;
-  padding: 1.5rem;
 }
 
 #day_forecast > p {
